@@ -1,0 +1,31 @@
+body{
+    background-image:url("/images/coins.jpg");
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-body{
+  margin-right: 0.5rem;
+}
+.nav-heading{
+color: white;
+font-family: 'Potta One', cursive;
+}
+.heading{
+  text-align: center;
+
+}
+.list-heading{
+  font-family: 'Jomhuria', cursive;
+  text-align: center;
+}
+.list-button{
+  color: black;
+}
+.form-text{
+  text-align: center;
+  background-color: black;
+  color: blue;
+
+}
+.form-button{
+  margin-bottom:1rem;
+}

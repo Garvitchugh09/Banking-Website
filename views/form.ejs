@@ -1,0 +1,27 @@
+<%- include("partials/header") %>
+
+
+<div class="form-text">
+    <h1 >Transferring From</h1>
+    <h3>Customer Name : <%= fromUser.name %></h3>
+    <h3>Current Balance = <%= fromUser.credits %></h3>
+</div>
+
+<div class="form-text" >
+    <h1>Transferring To</h1>
+    <h3>Customer Name : <%= toUser.name %></h3>
+    <h3>Current Balance = <%= toUser.credits %></h3>
+</div>
+
+<div class="form-text" >
+    <form action="/view/<%= fromUser._id %>/<%= toUser._id %>?_method=PUT" method="POST">
+    <label for="credits">Amount(In Rs)</label>
+    <br>
+    <input class="form-button" type="number" id="credit" name="credit" placeholder="" value="">
+    <br>
+    <button  type="submit" type="button" class="btn btn-success"type="button" class="btn btn-success">Transfer</button>
+    </form>
+</div>
+
+
+<%- include("partials/footer") %>
